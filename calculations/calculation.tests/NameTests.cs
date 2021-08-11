@@ -19,5 +19,12 @@ namespace calculations.tests
             Assert.Equal(expected, result);
             Assert.Contains(expected3, result);
         }
+
+        [Fact]
+        public void NickNameShouldBeNull()
+        {
+            Names names = new Names();
+            Assert.Null(names.nickName);
+        }
     }
 }
